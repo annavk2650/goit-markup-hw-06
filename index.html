@@ -393,16 +393,14 @@
           <p class="subscription-title">Підпишіться на розсилку</p>
           <div class="footer-subscription">
             <form class="subscription-form">
-              <label class="subscription-input">
-                <input type="text" name="email" placeholder="E-mail" />
-              </label>
+              <input class="subscription-input" type="text" name="email" placeholder="E-mail" />
             </form>
-            <div class="subscription-button">
-              <button class="subscription-button-icon" type="submit">Підписатися</button>
+            <button class="subscription-button" type="submit">
+              <span class="subscription-button-text">Підписатися</span>
               <svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -446,7 +444,8 @@
             </div>
           </label>
           <label class="input"
-            >Коментар <textarea name="coments" cols="30" rows="10">Введіть текст</textarea>
+            >Коментар
+            <textarea class="modal-coments" name="coments" height="120">Введіть текст</textarea>
           </label>
 
           <input
@@ -456,11 +455,14 @@
             id="privecy"
           />
           <label class="modal-privecy" for="privecy"
-            ><span class="custom-checkbox"></span>Погоджуюся з розсилкою та приймаю<a href=""
-              >Умови договору</a
-            ></label
-          >
-          <button type="submit">Відправити</button>
+            ><span class="custom-checkbox"></span>Погоджуюся з розсилкою та приймаю<a
+              class="contract"
+              href="#"
+            >
+              Умови договору</a
+            >
+          </label>
+          <button class="modal-button-submit" type="submit">Відправити</button>
         </form>
       </div>
     </div>
