@@ -393,7 +393,7 @@
           <p class="subscription-title">Підпишіться на розсилку</p>
           <div class="footer-subscription">
             <form class="subscription-form">
-              <input class="subscription-input" type="text" name="email" placeholder="E-mail" />
+              <input class="subscription-input" type="text" name="email" placeholder="   E-mail" />
             </form>
             <button class="subscription-button" type="submit">
               <span class="subscription-button-text">Підписатися</span>
@@ -418,34 +418,35 @@
           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
           <label class="input"
             >Ім'я
-            <div class="modal-wrapper">
+            <span class="modal-wrapper">
               <input class="modal-input" type="text" name="name" />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#person-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
+
           <label class="input"
             >Телефон
-            <div class="modal-wrapper">
+            <span class="modal-wrapper">
               <input class="modal-input" type="text" name="phone" />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#phone-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
-          <label class="input"
+          <label for="user_email" class="input"
             >Пошта
-            <div class="modal-wrapper">
-              <input class="modal-input" type="text" name="email" />
+            <span class="modal-wrapper">
+              <input class="modal-input" type="text" name="email" id="user_email" />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#email-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="input"
             >Коментар
-            <textarea class="modal-coments" name="coments" height="120">Введіть текст</textarea>
+            <textarea class="modal-comments" name="comments" placeholder="Введіть текст"></textarea>
           </label>
 
           <input
