@@ -554,41 +554,37 @@ button {
 
   color: var(--primary-white-color);
 }
-.footer-subscription {
+.subscription-form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.subscription-form {
+.subscription-input {
+  width: 358px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-right: 12px;
-  width: 358px;
-  height: 50px;
-  outline: none;
-}
-.subscription-input {
-  width: 100%;
-  height: 100%;
-  border: none;
+
+  padding: 15px 16px;
   background-color: var(--accent-background-color);
-}
-.subscription-input::placeholder {
-  padding-top: 15px;
-  padding-left: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscription-input:focus {
+  border-color: var(--accent-color);
+}
+
 .subscription-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 12px;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -824,6 +820,7 @@ button {
   fill: var(--accent-color);
 }
 .modal-comments {
+  padding: 12px 16px;
   margin-top: 4px;
   width: 100%;
   height: 120px;
@@ -834,13 +831,12 @@ button {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-
+  outline: transparent;
   color: rgba(117, 117, 117, 0.5);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comments:focus {
   border-color: var(--accent-color);
-  outline: none;
 }
 .modal-checkbox:checked + .modal-privecy .custom-checkbox {
   border-color: transparent;
@@ -897,8 +893,6 @@ button {
   background-color: var(--button-focus-color);
 }
 .modal-comments::placeholder {
-  padding-top: 12px;
-  padding-left: 16px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
